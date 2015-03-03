@@ -10,7 +10,6 @@ feature "Existing user can log into Chitter" do
                  :password_confirmation => 'TedTex')
   end
 
-
   scenario 'with correct credentials' do
     sign_in("SuperMan", 'TedTex')
     expect(page).to have_content('Welcome, mrTex@test.com')
@@ -25,8 +24,6 @@ feature "Existing user can log into Chitter" do
     sign_in("batman", "wrongOne")
     expect(page).not_to have_content('Welcome mrTex@test.com')
   end
-
-
 
 end
 

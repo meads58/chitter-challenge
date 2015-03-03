@@ -41,6 +41,4 @@ feature "User adds a new peep" do
     expect(page).to have_css('.user_details', :text => "Jimbo Jones")
   end
 
-
-
 end

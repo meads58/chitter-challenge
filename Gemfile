@@ -7,7 +7,8 @@ gem 'bcrypt-ruby'
 gem 'rack-flash3'
 gem 'sinatra-partial'
 
-group :test do
+group :test, :development do
+  gem 'guard'
   gem 'rspec'
   gem 'capybara'
   gem 'database_cleaner'

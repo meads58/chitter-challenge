@@ -6,4 +6,12 @@ class ChitterApp < Sinatra::Base
     end
   end
 
+   def user_create
+    User.create(:email => params[:email],
+              :user_name => params[:user_name],
+              :name => params[:name],
+              :password => params[:password],
+              :password_confirmation => params[:password_confirmation])
+  end
+
 end

@@ -24,6 +24,4 @@ feature "User log out" do
     expect(page).to have_content "Return Home"
   end
 
-
-
 end

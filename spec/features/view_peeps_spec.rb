@@ -1,6 +1,7 @@
-feature "viewing peeps" do
 require_relative './helpers/sign_up.rb'
 require_relative './helpers/add_peep.rb'
+
+feature "viewing peeps" do
 
   scenario "no login required to view all peeps" do
     sign_up
@@ -10,5 +11,6 @@ require_relative './helpers/add_peep.rb'
     visit '/peeps'
     expect(page).to have_css('.peep', :count => 2)
   end
+
 end
 

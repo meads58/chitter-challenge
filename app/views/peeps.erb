@@ -14,7 +14,9 @@
     <%= peep.peep %>
       <div class='user_details'>
         By: <%= peep.user.name%>
-        User Id: <%= peep.user.user_name %>
+        <form class='peep_input' action="/reply" method="post">
+          <input type="submit" value=<%= peep.user.user_name %> name="post" >
+        </form>
       </div>
     <% end %>
   </li>
